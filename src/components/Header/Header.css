@@ -1,0 +1,218 @@
+.main-header {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+.main-header .header-top {
+  position: relative;
+}
+
+.main-header .header-top .inner-container {
+  position: relative;
+}
+
+.main-header .header-top .inner-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1000%;
+  background-color: #f1f1f1;
+  content: "";
+}
+
+.main-header .top-left {
+  position: relative;
+  float: left;
+}
+
+.main-header .top-left .text {
+  position: relative;
+  padding: 20px 0;
+  padding-left: 45px;
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--black-shade7);
+  font-weight: 400;
+}
+
+.main-header .top-right {
+  position: relative;
+  float: right;
+  padding: 20px 0;
+}
+
+.main-header .top-right:before {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  height: 100%;
+  width: 1000%;
+  background-color: var(--black-shade2);
+  content: "";
+}
+
+/*Social Icon One*/
+
+.social-icon-one {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.social-icon-one li {
+  position: relative;
+  list-style-type: none;
+  float: left;
+  margin-left: 25px;
+}
+
+.social-icon-one li:first-child {
+  margin-left: 0;
+}
+
+.social-icon-one li a {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: var(--bg-color);
+  line-height: 30px;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.social-icon-one li a:hover {
+  color: var(--primary-color);
+}
+.main-header .top-right .social-icon-one {
+  float: left;
+}
+
+/*=== Header Upper ===*/
+.main-header .logo-outer {
+  position: relative;
+  padding: 40px 0px;
+}
+
+.main-header .header-upper .upper-right {
+  position: relative;
+  padding: 50px 0 0;
+}
+
+.main-header .info-box {
+  position: relative;
+  float: left;
+  text-align: left;
+  min-height: 60px;
+  padding-left: 75px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  padding-top: 3px;
+}
+
+.main-header .info-box:first-child {
+  margin-left: 0;
+}
+
+.main-header .info-box .icon-box {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  height: 60px;
+  width: 60px;
+  text-align: left;
+}
+
+.main-header .info-box .icon-box span {
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--black-shade0);
+}
+
+.main-header .info-box ul {
+  position: relative;
+  margin: 0;
+}
+
+.main-header .info-box li {
+  position: relative;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black-shade7);
+  font-weight: 400;
+}
+
+.main-header .info-box li a {
+  color: var(--black-shade7);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.main-header .info-box li a:hover {
+  color: var(--primary-color);
+}
+
+.main-header .info-box strong {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  color: var(--black-shade2);
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+/*=== Header Lower ===*/
+.main-header .header-lower {
+  position: relative;
+}
+
+.main-header .header-lower .logo-box {
+  position: relative;
+  float: left;
+}
+
+.main-header .header-lower .logo {
+  position: relative;
+  padding: 27px 0;
+}
+
+.main-header .header-lower .logo img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header .header-lower .nav-outer {
+  position: relative;
+}
+
+.main-header .main-box {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.main-header .main-box:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1000%;
+  background-color: var(--primary-color);
+  content: "";
+}
