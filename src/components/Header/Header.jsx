@@ -16,11 +16,11 @@ export default function Header() {
             </div>
             <div className="top-right">
               <ul className="social-icon-one">
-                <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
-                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i className="fa fa-pinterest"></i></a></li>
-                <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+                <li><a href="facebook.com"><i className="fa fa-facebook-f"></i></a></li>
+                <li><a href="twitter.com"><i className="fa fa-twitter"></i></a></li>
+                <li><a href="linkedin..com"><i className="fa fa-linkedin"></i></a></li>
+                <li><a href="pinterest.com"><i className="fa fa-pinterest"></i></a></li>
+                <li><a href="dribbble.com"><i className="fa fa-dribbble"></i></a></li>
               </ul>
             </div>
           </div>
