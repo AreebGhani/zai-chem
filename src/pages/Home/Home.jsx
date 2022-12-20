@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { Preloader, Header, Hero } from "../../components"
 import { Helmet } from 'react-helmet';
+import { Preloader } from "../../components";
+import { Hero, About, Services, Products, Team, Testimonial, News, Clients } from "../../sections";
 
 export default function Home() {
 
@@ -13,63 +14,17 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Home</title>
-        <link rel="stylesheet" href="/flaticon/flaticon.css" />
+        <title>Home &ndash; ZAI Chem</title>
         <link rel="stylesheet" href="/css/responsive.css" />
       </Helmet>
-      <Header />
       <Hero />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <About />
+      <Services />
+      <Products />
+      <Team />
+      <Testimonial />
+      <News />
+      <Clients />
     </>
   )
 }

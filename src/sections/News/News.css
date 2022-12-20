@@ -1,0 +1,227 @@
+.news-section {
+  position: relative;
+  padding: 95px 0 60px;
+}
+
+.news-block {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.news-block .inner-box {
+  position: relative;
+  padding-right: 40px;
+}
+
+.news-block .image-box {
+  position: relative;
+}
+
+.news-block .image-box .image {
+  position: relative;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.news-block .image-box .icon-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--bg-color);
+  font-weight: 400;
+  background-color: #252525;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.news-block .inner-box:hover .icon-box {
+  background-color: var(--primary-color);
+}
+
+.news-block .image-box .owl-nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  margin-top: -45px;
+}
+
+.news-block .image-box .owl-nav .owl-next,
+.news-block .image-box .owl-nav .owl-prev {
+  position: absolute;
+  width: 25px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 17px;
+  color: var(--bg-color);
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.news-block .image-box .owl-nav .owl-next {
+  left: auto;
+  right: 0;
+}
+
+.news-block .image-box .owl-nav .owl-next:hover,
+.news-block .image-box .owl-nav .owl-prev:hover {
+  color: var(--black-shade2);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.news-block .image-box .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.news-block .lower-content {
+  position: relative;
+  right: -40px;
+  margin-top: -40px;
+  padding: 25px 25px 30px;
+  background-color: var(--bg-color);
+  box-shadow: 6px 8px 21px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  z-index: 9;
+}
+
+.news-block .inner-box:hover .lower-content {
+  background-color: var(--primary-color);
+}
+
+.news-block .lower-content .post-info {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.news-block .lower-content .post-info li {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--black-shade7);
+  font-weight: 400;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.news-block .inner-box:hover .lower-content .post-info li:before,
+.news-block .inner-box:hover .lower-content .post-info li {
+  color: var(--bg-color);
+}
+
+.news-block .lower-content .post-info li .a {
+  color: var(--black-shade7);
+}
+
+.news-block .lower-content .post-info li:before {
+  position: absolute;
+  right: -3px;
+  top: 0;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--black-shade7);
+  font-weight: 400;
+  content: "|";
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.news-block .lower-content .post-info li:last-child:before {
+  display: none;
+}
+
+.news-block .lower-content h3 {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: var(--black-shade2);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.news-block .lower-content h3 .a {
+  color: var(--black-shade2);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.news-block .inner-box:hover .lower-content h3 .a {
+  color: var(--bg-color);
+}
+
+.news-block .lower-content .text {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--black-shade7);
+  font-weight: 400;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.news-block .inner-box:hover .lower-content .text {
+  color: var(--bg-color);
+}
+
+.news-block .lower-content .link-box {
+  position: relative;
+}
+
+.news-block .lower-content .link-box .a {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.news-block .lower-content .link-box .a:hover {
+  color: var(--black-shade2);
+}
+
+.news-block .lower-content .link-box .a i {
+  margin-left: 5px;
+}
