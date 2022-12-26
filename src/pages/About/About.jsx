@@ -1,7 +1,12 @@
 import React from 'react';
+import { Cta, Footer, Header } from './../../components';
 
 export default function About() {
   return (
-    <div>About</div>
+    <>
+      <Header theme="dark" />
+      <Cta />
+      <Footer theme="dark" />
+    </>
   )
 }

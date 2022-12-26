@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import img1 from "../../assets/images/resource/service-1.jpg";
 import img2 from "../../assets/images/resource/service-2.jpg";
 import img3 from "../../assets/images/resource/service-3.jpg";
+import CountUp from 'react-countup';
 
 export default function Services() {
     const ourServices = [
@@ -100,7 +101,7 @@ export default function Services() {
                                             <div className="count-box">
                                                 <span className={count.icon}></span>
                                                 <h4 className="counter-title">{count.first} <br /> {count.second}</h4>
-                                                <span className="count-text">{count.number}</span>
+                                                <span className="count-text"><CountUp end={count.number} /></span>
                                             </div>
                                         </div>
                                     )

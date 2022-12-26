@@ -216,3 +216,101 @@
   background-color: var(--primary-color);
   content: "";
 }
+
+
+/* Header Style Two */
+.header-style-two {
+  position: relative;
+  background-image: url(../../assets/images/icons/pattern-7.jpg);
+  background-repeat: repeat;
+}
+
+.header-style-two .auto-container {
+  max-width: 1650px;
+}
+
+.header-style-two .main-box:before {
+  display: none;
+}
+
+.header-style-two .logo-outer {
+  padding: 0;
+}
+
+.header-style-two .header-lower .logo {
+  padding: 45px 0;
+}
+
+.header-style-two .header-lower .nav-outer {
+  float: right;
+  font-family: var(--heading-family);
+}
+
+.header-style-two .main-menu .navigation > li.dropdown > .a:after,
+.header-style-two .main-menu .navigation > li > .a {
+  color: var(--bg-color);
+  font-size: 16px;
+}
+
+.header-style-two .main-menu .navigation > li {
+  padding: 60px 0;
+}
+
+.header-style-two .main-menu .navigation > li:hover,
+.header-style-two .main-menu .navigation > li.active {
+  border-bottom: 3px solid var(--bg-color);
+}
+
+.header-style-two .outer-box {
+  position: relative;
+  float: right;
+}
+
+.header-style-two .search-box-outer {
+  position: relative;
+  float: left;
+  margin-left: 0;
+  padding: 57px 0;
+}
+
+.header-style-two .search-box-btn {
+  border-color: var(--primary-color);
+}
+
+.header-style-two .outer-box .info-box {
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  padding: 51px 0;
+  margin-left: 50px;
+}
+
+.header-style-two .outer-box .info-box .a {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--bg-color);
+  font-weight: 400;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.header-style-two .outer-box .info-box .a:hover {
+  color: var(--primary-color);
+}
+
+.header-style-two .outer-box .btn-box {
+  position: relative;
+  float: right;
+  margin-left: 40px;
+  padding: 40px 0;
+}
+
+.header-style-two .search-box-outer .dropdown-menu {
+  top: 57px !important;
+}

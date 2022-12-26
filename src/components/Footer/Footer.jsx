@@ -3,9 +3,9 @@ import "./Footer.css";
 import img1 from "../../assets/images/resource/post-thumb-1.jpg";
 import img2 from "../../assets/images/resource/post-thumb-2.jpg";
 
-export default function Footer() {
+export default function Footer({ theme }) {
     return (
-        <footer className="main-footer">
+        <footer className={theme === 'dark' ? 'main-footer style-two alternate' : 'main-footer'}>
             {/* <!--footer upper--> */}
             <div className="footer-upper">
                 <div className="auto-container">

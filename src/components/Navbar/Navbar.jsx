@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Navbar.css";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 export const NavLinks = [
   {
@@ -79,6 +79,8 @@ export const NavLinks = [
 
 export default function Navbar() {
 
+  const { pathname } = useLocation();
+
   function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
     return {
@@ -132,7 +134,7 @@ export default function Navbar() {
             {
               NavLinks.map((navlink, i) => {
                 return (
-                  <li key={i} className={navlink.menu && "dropdown"}>
+                  <li key={i} className={pathname.slice(1) === navlink.name.toLowerCase() ? navlink.menu ? "dropdown active" : "active" : navlink.menu && "dropdown"}>
                     <NavLink className={(navColor) => navColor.isActive ? "a current" : "a"} to={navlink.to}>{navlink.name}</NavLink>
                     {
                       navlink.menu &&
