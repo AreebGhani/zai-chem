@@ -539,3 +539,45 @@ img {
 .page-title .bread-crumb li a:hover {
   color: var(--primary-color);
 }
+
+/* Request Form */
+.request-form .form-group input[type="text"],
+.request-form .form-group input[type="email"],
+.request-form .form-group input[type="url"],
+.request-form .form-group textarea,
+.request-form .form-group select {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: var(--black-shade2);
+  line-height: 20px;
+  padding: 15px 28px;
+  border: 1px solid #bbbbbb;
+  background-color: var(--bg-color);
+  font-weight: 400;
+  height: 50px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.request-form .form-group input:focus,
+.request-form .form-group select:focus,
+.request-form .form-group textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.request-form .form-group textarea {
+  height: 200px;
+  resize: none;
+}
+
+.request-form .form-group button {
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 15px 45px;
+  line-height: 20px;
+}

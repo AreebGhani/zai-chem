@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import img1 from "../../assets/images/resource/service-1.jpg";
 import img2 from "../../assets/images/resource/service-2.jpg";
 import img3 from "../../assets/images/resource/service-3.jpg";
-import CountUp from 'react-countup';
 
 export default function Services() {
     const ourServices = [
@@ -27,32 +26,7 @@ export default function Services() {
             icon: "icon fa fa-flask",
         },
     ];
-    const counter = [
-        {
-            first: "Professional",
-            second: "Engineers",
-            icon: "icon flaticon-worker",
-            number: 591,
-        },
-        {
-            first: "Industry",
-            second: "Products",
-            icon: "icon flaticon-gears",
-            number: 898,
-        },
-        {
-            first: "Factories",
-            second: "WordWide",
-            icon: "icon flaticon-factory",
-            number: 591,
-        },
-        {
-            first: "Satisfied",
-            second: "Customers",
-            icon: "icon flaticon-robot-arm",
-            number: 681,
-        },
-    ];
+
     return (
         <>
             <section className="services-section">
@@ -87,27 +61,6 @@ export default function Services() {
                                 )
                             })
                         }
-                    </div>
-                </div>
-            </section>
-            <section className="fun-fact-section">
-                <div className="auto-container">
-                    <div className="fact-counter">
-                        <div className="row clearfix">
-                            {
-                                counter.map((count, i) => {
-                                    return (
-                                        <div key={i} className="counter-column col-lg-3 col-md-6 col-sm-12">
-                                            <div className="count-box">
-                                                <span className={count.icon}></span>
-                                                <h4 className="counter-title">{count.first} <br /> {count.second}</h4>
-                                                <span className="count-text"><CountUp end={count.number} /></span>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div>
                     </div>
                 </div>
             </section>

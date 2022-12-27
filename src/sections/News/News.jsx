@@ -38,7 +38,7 @@ export default function News() {
                                     <div className="inner-box">
                                         <div className="image-box">
                                             <div className="single-item-carousel owl-carousel owl-theme">
-                                                {blog.imgs.map((img, i) => <figure className="image"><NavLink className="a" to="/blog"><img src={img.url} alt="" /></NavLink></figure>)}
+                                                {blog.imgs.map((img, i) => <figure key={i} className="image"><NavLink className="a" to="/blog"><img src={img.url} alt="" /></NavLink></figure>)}
                                             </div>
                                         </div>
                                         <div className="lower-content">

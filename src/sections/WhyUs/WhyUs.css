@@ -1,0 +1,136 @@
+.fluid-section-one {
+  position: relative;
+}
+
+.fluid-section-one .outer-container {
+  position: relative;
+  min-height: 350px;
+}
+
+.fluid-section-one .image-column {
+  position: absolute;
+  float: left;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+  background-image: url(../../assets/images/resource/image-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+
+.fluid-section-one .image-column .image-box {
+  position: relative;
+  display: none;
+}
+
+.fluid-section-one .image-column .image-box img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.fluid-section-one .content-column {
+  position: relative;
+  float: right;
+  width: 50%;
+}
+
+.fluid-section-one .content-column:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../assets/images/icons/pattern-6.png);
+  background-position: center bottom;
+  content: "";
+  opacity: 0.1;
+}
+
+.fluid-section-one .content-column .inner-box {
+  position: relative;
+  max-width: 720px;
+  padding: 100px 15px 50px 115px;
+}
+
+.fluid-section-one .content-column .inner-box .sec-title {
+  margin-bottom: 45px;
+}
+
+.fluid-section-one .content-column .inner-box .text {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.fluid-section-one .content-column .inner-box .text p {
+  position: relative;
+  font-size: 14px;
+  line-height: 27px;
+  color: var(--black-shade7);
+  margin-bottom: 27px;
+}
+
+.fluid-section-one .content-column .inner-box .text p:last-child {
+  margin-bottom: 0px;
+}
+
+.fluid-section-one .content-column .inner-box .choose-info {
+  position: relative;
+  margin: 0;
+}
+
+.fluid-section-one .content-column .inner-box .choose-info li {
+  position: relative;
+  float: left;
+  width: 50%;
+  list-style-type: none;
+  padding-left: 70px;
+  margin-bottom: 30px;
+  min-height: 50px;
+  text-transform: capitalize;
+  cursor: default;
+}
+
+.fluid-section-one .content-column .inner-box .choose-info li h5 {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black-shade2);
+  margin-bottom: 8px;
+}
+
+.fluid-section-one .content-column .inner-box .choose-info li h5 a {
+  color: var(--black-shade2);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.fluid-section-one .content-column .inner-box .choose-info li .icon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: var(--primary-color);
+  line-height: 1em;
+  font-size: 48px;
+  font-weight: 400;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.fluid-section-one .content-column .inner-box .choose-info li:hover a,
+.fluid-section-one .content-column .inner-box .choose-info li:hover .icon {
+  color: var(--primary-color);
+}
+
+.fluid-section-one.alternate .content-column:before {
+  display: none;
+}

@@ -1,8 +1,14 @@
 export { default as Hero } from "./Hero/Hero";
-export { default as About } from "./About/About";
+export { default as AboutUs } from "./AboutUs/AboutUs";
 export { default as Services } from "./Services/Services";
+export { default as FunFact } from "./FunFact/FunFact";
 export { default as Products } from "./Products/Products";
 export { default as Team } from "./Team/Team";
 export { default as Testimonial } from "./Testimonial/Testimonial";
 export { default as News } from "./News/News";
 export { default as Clients } from "./Clients/Clients";
+export { default as PageTitle } from "./PageTitle/PageTitle";
+export { default as WhyUs } from "./WhyUs/WhyUs";
+export { default as Process } from "./Process/Process";
+export { default as VideoPlay } from "./VideoPlay/VideoPlay";
+export { default as Feature } from "./Feature/Feature";

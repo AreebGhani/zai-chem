@@ -1,0 +1,117 @@
+.page-title {
+  position: relative;
+  background-image: url(../../assets/images/icons/pattern-7.jpg);
+  background-repeat: repeat;
+  background-position: top;
+}
+
+.page-title:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 120px;
+  background-color: var(--bg-color);
+}
+
+.page-title .auto-container {
+  max-width: 1650px;
+}
+
+.page-title .inner-container {
+  position: relative;
+  background-image: url(../../assets/images/background/8.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 115px 0 60px;
+  border-top: 4px solid var(--primary-color);
+}
+
+.page-title .inner-container .outer-box {
+  position: relative;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.page-title .inner-container .inner {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-title h1 {
+  position: relative;
+  float: left;
+  font-size: 48px;
+  color: var(--bg-color);
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.page-title .bread-crumb {
+  position: relative;
+  float: right;
+  padding: 20px 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.page-title .bread-crumb li {
+  position: relative;
+  list-style: none;
+  float: left;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: default;
+  padding-right: 30px;
+  margin-right: 30px;
+}
+
+.page-title .bread-crumb li:before {
+  position: absolute;
+  right: -10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--primary-color);
+  content: "\f178";
+  font-family: "FontAwesome";
+}
+
+.page-title .bread-crumb li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.page-title .bread-crumb li:last-child:before {
+  display: none;
+}
+
+.page-title .bread-crumb li a {
+  position: relative;
+  color: var(--bg-color);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.page-title .bread-crumb li a:before {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--bg-color);
+  content: "";
+}
+
+.page-title .bread-crumb li a:hover {
+  color: var(--primary-color);
+}

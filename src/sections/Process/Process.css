@@ -1,0 +1,139 @@
+.process-section {
+  position: relative;
+  padding: 120px 0 70px;
+}
+
+.process-block {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.process-block .inner-box {
+  position: relative;
+  text-align: center;
+}
+
+.process-block .inner-box:before {
+  position: absolute;
+  right: -60px;
+  top: 200px;
+  height: 45px;
+  width: 102px;
+  background-image: url(../../assets/images/icons/icon-twist-arrow.png);
+  content: "";
+}
+
+.process-block:nth-child(3n + 3) .inner-box:before {
+  display: none;
+}
+
+.process-block .count {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 60px;
+  color: var(--black-shade2);
+  font-weight: 700;
+  background-color: #ebebeb;
+  margin-bottom: 90px;
+}
+
+.process-block .count:before {
+  position: absolute;
+  top: 100%;
+  left: 29px;
+  height: 50px;
+  width: 1px;
+  background-color: var(--primary-color);
+  content: "";
+}
+
+.process-block .icon-box {
+  position: relative;
+  display: block;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 65px;
+  margin: 0 auto 65px;
+  border-radius: 50%;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.13);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.process-block .inner-box:hover .icon-box {
+  background-color: var(--black-shade2);
+  box-shadow: none;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.process-block .icon-box .icon {
+  position: relative;
+  display: inline-block;
+  color: var(--primary-color);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.process-block .inner-box:hover .icon-box .icon {
+  color: var(--bg-color);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.process-block h4 {
+  display: block;
+  font-size: 24px;
+  line-height: 1.2em;
+  color: var(--black-shade2);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.process-block h4 a {
+  color: var(--black-shade2);
+  display: inline-block;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.process-block h4 a:hover {
+  color: var(--primary-color);
+}
+
+.process-block .title {
+  display: block;
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: var(--heading-family);
+}
+
+.process-section.alternate .process-block .inner-box:hover .icon-box {
+  background-color: var(--primary-color);
+}
+
+.process-section.alternate .process-block .inner-box:hover .icon-box .icon {
+  color: var(--black-shade2);
+}

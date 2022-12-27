@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Cta, Footer, Header, Preloader } from "../../components";
-import { Hero, About, Services, Products, Team, Testimonial, News, Clients } from "../../sections";
+import { Hero, AboutUs, Services, Products, Team, Testimonial, News, Clients, FunFact } from "../../sections";
 
 export default function Home() {
 
@@ -19,8 +19,9 @@ export default function Home() {
       </Helmet>
       <Header />
       <Hero />
-      <About />
+      <AboutUs />
       <Services />
+      <FunFact />
       <Products />
       <Team />
       <Testimonial />

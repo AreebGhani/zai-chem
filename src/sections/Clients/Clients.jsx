@@ -12,7 +12,7 @@ export default function Clients() {
             <div className="auto-container">
                 <div className="sponsors-outer">
                     <ul className="sponsors-carousel owl-carousel owl-theme">
-                        {images.map((image, i) => <li className="slide-item"><figure className="image-box"><img src={image.img} alt="" /></figure></li>)}
+                        {images.map((image, i) => <li key={i} className="slide-item"><figure className="image-box"><img src={image.img} alt="" /></figure></li>)}
                     </ul>
                 </div>
             </div>
