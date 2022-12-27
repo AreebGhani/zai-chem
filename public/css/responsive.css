@@ -1,14 +1,20 @@
 /* Manufactori - Factory and Industries HTML Template */
+@media screen and (min-width: 1139px) {
+  .header-style-two .search-box-outer {
+    margin-top: 40px;
+  }
+}
+
 @media only screen and (max-width: 1439px) {
   .testimonial-section:before {
     display: none;
   }
 
-  .header-style-three .main-menu .navigation > li {
+  .header-style-two .main-menu .navigation > li {
     margin-right: 40px;
   }
 
-  .header-style-three .outer-box .info-box {
+  .header-style-two .outer-box .info-box {
     display: none;
   }
 
@@ -40,8 +46,8 @@
     padding: 0;
   }
 
-  .header-style-three .outer-box .btn-box,
-  .header-style-three .outer-box .info-box {
+  .header-style-two .outer-box .btn-box,
+  .header-style-two .outer-box .info-box {
     display: none;
   }
 
@@ -88,12 +94,12 @@
     margin-right: 10px;
   }
 
-  .header-style-two .logo-outer:before {
+  .header-style-three .logo-outer:before {
     right: 0;
   }
 
-  .header-style-two .header-lower .nav-outer,
-  .header-style-two .main-box {
+  .header-style-three .header-lower .nav-outer,
+  .header-style-three .main-box {
     padding-left: 0;
   }
 
@@ -160,7 +166,7 @@
     padding-right: 15px;
   }
 
-  .header-style-three .logo-outer:before {
+  .header-style-two .logo-outer:before {
     position: absolute;
     left: -15px;
     right: -15px;
@@ -169,24 +175,24 @@
     content: "";
   }
 
-  .header-style-three .header-lower .nav-outer {
+  .header-style-two .header-lower .nav-outer {
     width: 100%;
   }
 
-  .header-style-three .main-menu .navigation > li {
+  .header-style-two .main-menu .navigation > li {
     padding: 20px 0;
   }
 
-  .header-style-three .search-box-outer {
+  .header-style-two .search-box-outer {
     padding: 17px 0;
   }
 
-  .header-style-three .main-menu .navigation > li:hover,
-  .header-style-three .main-menu .navigation > li.current {
+  .header-style-two .main-menu .navigation > li:hover,
+  .header-style-two .main-menu .navigation > li.current {
     border-bottom: 1px solid #ffffff;
   }
 
-  .header-style-three .search-box-outer .dropdown-menu {
+  .header-style-two .search-box-outer .dropdown-menu {
     top: 17px !important;
   }
 
