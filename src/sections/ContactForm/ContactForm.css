@@ -1,0 +1,63 @@
+.contact-form-section{
+	position: relative;
+	padding: 120px 0 90px;
+}
+
+.contact-form-section .sec-title{
+	margin-bottom: 50px;
+}
+
+.contact-form .form-group{
+	position:relative;
+	margin-bottom:30px;	
+}
+
+.contact-form .form-group input[type="text"],
+.contact-form .form-group input[type="email"],
+.contact-form .form-group input[type="url"],
+.contact-form .form-group textarea,
+.contact-form .form-group select{
+	position: relative;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: var(--black-shade7);
+    line-height: 28px;
+    padding: 10px 25px;
+    background-color: rgba(255,255,255,1);
+    font-weight: 400;
+    height: 50px;
+    border: 1px solid var(--white-color);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group select:focus,
+.contact-form .form-group textarea:focus{
+	border-color:var(--primary-color);
+}
+
+.contact-form .form-group textarea{
+	height: 190px;
+	resize: none;
+	border-radius: 20px;
+	padding-top: 20px;
+}
+
+.contact-form label.error{
+	color: #ff0000;
+}
+
+.contact-form .form-group button{
+	border: 0;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	margin-top: 10px;
+	font-weight: 700;
+	border-radius: 5px;
+	padding: 10px 40px;
+}

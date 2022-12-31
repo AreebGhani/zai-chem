@@ -1,0 +1,477 @@
+.services-section {
+  position: relative;
+  padding: 100px 0 0;
+  background-image: url(../../assets/images/background/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services-section:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--black-shade0);
+  opacity: 0.9;
+  content: "";
+}
+
+.services-section:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 71px;
+  width: 100%;
+  background-color: #f5f5f5;
+  content: "";
+  z-index: 1;
+}
+
+.services-carousel {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-block {
+  position: relative;
+}
+
+.service-block .inner-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-block .image-box {
+  position: relative;
+}
+
+.service-block .image-box .image {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.service-block .image-box .image img {
+  display: block;
+}
+
+.service-block .overlay-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 50px;
+  height: 100%;
+  padding: 0 30px 50px;
+  opacity: 0;
+  transform: translateX(-50%);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block .inner-box:hover .overlay-box {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.service-block .overlay-box:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  content: "";
+}
+
+.service-block .overlay-box .icon {
+  position: relative;
+  height: 130px;
+  width: 50px;
+  background-color: var(--black-shade2);
+  padding-top: 80px;
+  text-align: center;
+  font-size: 26px;
+  color: var(--bg-color);
+  border-radius: 0 0 30px 30px;
+  display: inline-block;
+  margin-bottom: 58px;
+}
+
+.service-block .overlay-box h5 {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: var(--black-shade2);
+  font-weight: 700;
+  margin-bottom: 38px;
+}
+
+.service-block .overlay-box h5 .a {
+  color: var(--black-shade2);
+  display: inline-block;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block .overlay-box h5 .a:hover {
+  color: var(--bg-color);
+}
+
+.service-block .overlay-box .text {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 36px;
+  color: var(--bg-color);
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.service-block .overlay-box .read-more {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black-shade2);
+  font-weight: 700;
+  font-family: var(--heading-family);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block .overlay-box .read-more:hover {
+  color: var(--bg-color);
+}
+
+.service-block .caption-box {
+  position: relative;
+  background-color: var(--bg-color);
+  padding: 20px 20px;
+  padding-left: 80px;
+  border: 1px dashed var(--primary-color);
+  border-radius: 0 0 30px 30px;
+  border-top: 0;
+}
+
+.service-block .caption-box h4 {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--black-shade2);
+}
+
+.service-block .caption-box h4 .a {
+  color: var(--black-shade2);
+  display: inline-block;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block .inner-box:hover .caption-box h4 .a {
+  color: var(--primary-color);
+}
+
+.service-block .caption-box .icon {
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  bottom: -1px;
+  width: 50px;
+  font-size: 24px;
+  background-color: var(--primary-color);
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  line-height: 70px;
+  color: var(--black-shade2);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block .inner-box:hover .caption-box .icon {
+  color: var(--primary-color);
+  background-color: var(--black-shade2);
+}
+
+.services-carousel .owl-nav {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+}
+
+.services-carousel .owl-next,
+.services-carousel .owl-prev {
+  position: absolute;
+  left: -125px;
+  top: -70px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  border: 1px solid var(--bg-color);
+  color: var(--primary-color);
+  font-size: 20px;
+  line-height: 33px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.services-carousel .owl-next {
+  left: auto;
+  right: -125px;
+}
+
+.services-carousel .owl-next .fa,
+.services-carousel .owl-prev .fa {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.services-carousel .owl-next:hover,
+.services-carousel .owl-prev:hover {
+  background-color: var(--bg-color);
+}
+
+/* Theme Two */
+.services-section-two {
+  position: relative;
+  padding: 120px 0 90px;
+}
+
+.services-section-two:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-image: url(../../assets/images/icons/pattern-6.png);
+  background-position: center bottom;
+  content: "";
+  opacity: 0.1;
+}
+
+.service-block-two {
+  position: relative;
+  display: block;
+  margin-bottom: 45px;
+}
+
+.service-block-two .inner-box {
+  position: relative;
+  padding: 40px 40px;
+  text-align: center;
+  background-color: var(--bg-color);
+  border: 1px solid var(--white-color);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-two .inner-box:hover {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.18);
+}
+
+.service-block-two .icon-box {
+  position: relative;
+  display: block;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+}
+
+.service-block-two .icon-box:before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  height: 2px;
+  background-color: #cccccc;
+  content: "";
+}
+
+.service-block-two .icon-box .icon {
+  display: block;
+  font-size: 48px;
+  color: var(--primary-color);
+  line-height: 1em;
+}
+
+.service-block-two h5 {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: var(--black-shade3);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.service-block-two h5 .a {
+  color: var(--black-shade3);
+  display: inline-block;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-two h5 .a:hover {
+  color: var(--primary-color);
+}
+
+.service-block-two .text {
+  position: relative;
+  color: var(--black-shade3);
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* Theme Three */
+
+.service-block-three {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.service-block-three .inner-box {
+  position: relative;
+  padding: 20px 20px;
+  padding-left: 130px;
+  text-align: left;
+  background-color: var(--bg-color);
+  border: 1px solid var(--white-color);
+  min-height: 100px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-three .inner-box:hover {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.18);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.service-block-three .icon-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.service-block-three .icon-box:before {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 1px;
+  height: 60px;
+  background-color: #cccccc;
+  content: "";
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-three .inner-box:hover .icon-box:before {
+  background-color: var(--bg-color);
+}
+
+.service-block-three .icon-box .icon {
+  display: block;
+  font-size: 48px;
+  color: var(--primary-color);
+  line-height: 100px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-three .inner-box:hover .icon-box .icon {
+  color: var(--bg-color);
+}
+
+.service-block-three h5 {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: var(--black-shade3);
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.service-block-three h5 .a {
+  color: var(--black-shade3);
+  display: inline-block;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-three .inner-box:hover h5 .a {
+  color: var(--bg-color);
+}
+
+.service-block-three .text {
+  position: relative;
+  color: var(--black-shade3);
+  font-size: 14px;
+  line-height: 30px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.service-block-three .inner-box:hover .text {
+  color: var(--bg-color);
+}

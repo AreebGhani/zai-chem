@@ -1,0 +1,147 @@
+.contact-info-section {
+    position: relative;
+    padding: 85px 0 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../assets/images/icons/pattern-4.jpg);
+}
+
+.contact-info-section .title-column {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contact-info-section .title-column h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--bg-color);
+    padding-right: 40px;
+    margin-bottom: 25px;
+}
+
+.contact-info-section .title-column h2 span {
+    color: #bbbbbb;
+}
+
+.contact-info-section .title-column h2:before {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    height: 2px;
+    width: 30px;
+    background-color: var(--primary-color);
+    content: "";
+}
+
+.contact-info-section .title-column .text {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--bg-color);
+    font-weight: 400;
+    max-width: 460px;
+}
+
+.contact-info-block {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contact-info-block .inner {
+    position: relative;
+    padding-left: 100px;
+}
+
+.contact-info-block .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 60px;
+    line-height: 1em;
+    color: #aaaaaa;
+}
+
+.contact-info-block h3 {
+    display: block;
+    font-size: 30px;
+    line-height: 1em;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-info-block .info {
+    position: relative;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--bg-color);
+    font-weight: 400;
+}
+
+.contact-info-block .info .a {
+    color: var(--bg-color);
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.contact-info-block .info .a:hover {
+    text-decoration: underline;
+}
+
+.contact-info-section .block-column {
+    position: relative;
+}
+
+.contact-info-section .block-column .inner-column {
+    position: relative;
+    padding-top: 55px;
+}
+
+/* Style Three */
+.contact-info-section.style-three {
+    position: relative;
+    background-color: var(--bg-color);
+    background-image: none;
+}
+
+.contact-info-section.style-three .contact-info-block .icon,
+.contact-info-section.style-three .title-column h2 {
+    color: var(--black-shade2);
+}
+
+.contact-info-section.style-three .contact-info-block {
+    margin-bottom: 85px;
+}
+
+.contact-info-section.style-three .contact-info-block h3,
+.contact-info-section.style-three .title-column h2 span {
+    color: var(--primary-color);
+}
+
+.contact-info-section.style-three .title-column h2:before {
+    background-color: var(--primary-color);
+}
+
+.contact-info-section.style-three .contact-info-block .info .a,
+.contact-info-section.style-three .contact-info-block .info,
+.contact-info-section.style-three .title-column .text {
+    color: var(--black-shade7);
+    max-width: 360px;
+}
+
+.contact-info-section.style-three .block-column .inner-column {
+    padding-top: 15px;
+}
+
+.contact-info-section.style-three .contact-info-block h3 {
+    font-size: 24px;
+}

@@ -1,0 +1,124 @@
+.news-latters {
+  position: relative;
+  background-image: url(../../assets/images/background/9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 120px 0 0;
+}
+
+.news-latters:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--black-shade0);
+  opacity: 0.6;
+  content: "";
+}
+
+.news-latters .form-column {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.news-latters .form-column .inner-column {
+  position: relative;
+}
+
+.news-latters .sec-title {
+  margin-bottom: 50px;
+}
+
+.news-latters .sec-title .devider span {
+  color: var(--bg-color);
+}
+
+.news-latters .sec-title .devider:before,
+.news-latters .sec-title .devider:after {
+  background-color: var(--bg-color);
+}
+
+.news-latters .form-column .text {
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--bg-color);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.newslatter-form {
+  position: relative;
+}
+
+.newslatter-form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.newslatter-form .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.newslatter-form .form-group input[type="text"],
+.newslatter-form .form-group input[type="email"],
+.newslatter-form .form-group input[type="url"],
+.newslatter-form .form-group textarea,
+.newslatter-form .form-group select {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: var(--bg-color);
+  line-height: 28px;
+  padding: 15px 28px;
+  border: 1px solid var(--bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 400;
+  height: 60px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.newslatter-form .form-group input:focus,
+.newslatter-form .form-group select:focus,
+.newslatter-form .form-group textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.newslatter-form .form-group textarea {
+  height: 200px;
+  resize: none;
+}
+
+.newslatter-form .form-group button {
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 15px 45px;
+  line-height: 25px;
+  color: var(--black-shade0);
+  font-family: "Roboto", sans-serif;
+}
+
+.newslatter-form .form-group button:hover {
+  color: var(--bg-color);
+}
+
+.news-latters .image-column {
+  position: relative;
+}
+
+.news-latters .image-column .image-box {
+  position: relative;
+}
+
+.news-latters .image-column .image {
+  position: relative;
+  margin-bottom: 0;
+}

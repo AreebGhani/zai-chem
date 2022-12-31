@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import { Cta, Footer, Header, Preloader } from "../../components";
-import { Hero, AboutUs, Services, Products, Team, Testimonial, News, Clients, FunFact } from "../../sections";
+import { Preloader } from "../../components";
+import { Hero, AboutUs, OurServices, Projects, Team, Testimonial, News, Clients, FunFact } from "../../sections";
 
 export default function Home() {
 
@@ -17,18 +17,15 @@ export default function Home() {
         <title>Home &ndash; ZAI Chem</title>
         <link rel="stylesheet" href="/css/responsive.css" />
       </Helmet>
-      <Header />
       <Hero />
       <AboutUs />
-      <Services />
+      <OurServices />
       <FunFact />
-      <Products />
+      <Projects />
       <Team />
       <Testimonial />
       <News />
       <Clients />
-      <Cta />
-      <Footer />
     </>
   )
 }
