@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Header.css";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from "../../assets/images/logo.png";
 import { Navbar, StickyNavbar } from "../";
 
@@ -39,7 +39,7 @@ export default function Header({ theme }) {
           <div className="auto-container">
             <div className="clearfix">
               <div className="pull-left logo-outer">
-                <div className="logo"><Link to="/"><img src={logo} width="180" height="50" alt="" title="" /></Link></div>
+                <div className="logo"><NavLink className="a" to="/"><img src={logo} width="180" height="50" alt="" title="" /></NavLink></div>
               </div>
               <div className="pull-right upper-right clearfix">
 
@@ -82,7 +82,7 @@ export default function Header({ theme }) {
             {
               theme === 'dark' &&
               <div className="pull-left logo-outer">
-                <div className="logo"><a href="index.html"><img src={logo} width="180" height="50" alt="" title="" /></a></div>
+                <div className="logo"><NavLink className="a" to="/"><img src={logo} width="180" height="50" alt="" title="" /></NavLink></div>
               </div>
             }
             <Navbar />

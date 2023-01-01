@@ -1,31 +1,39 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Preloader } from "../../components";
-import { Hero, AboutUs, OurServices, Projects, Team, Testimonial, News, Clients, FunFact } from "../../sections";
+import { Hero, AboutUs, OurServices, Projects, OurTeam, Testimonial, News, Clients, FunFact } from "../../sections";
 
 export default function Home() {
 
+  const [load, setLoad] = useState(true)
+
   useEffect(() => {
-    <Preloader />
+    setTimeout(() => setLoad(false), 800)
     return;
   }, [])
 
 
   return (
     <>
-      <Helmet>
-        <title>Home &ndash; ZAI Chem</title>
-        <link rel="stylesheet" href="/css/responsive.css" />
-      </Helmet>
-      <Hero />
-      <AboutUs />
-      <OurServices />
-      <FunFact />
-      <Projects />
-      <Team />
-      <Testimonial />
-      <News />
-      <Clients />
+      {!load ?
+        <>
+          <Helmet>
+            <title>Home &ndash; ZAI Chem</title>
+            <link rel="stylesheet" href="/css/responsive.css" />
+          </Helmet>
+          <Hero />
+          <AboutUs />
+          <OurServices />
+          <FunFact />
+          <Projects />
+          <OurTeam />
+          <Testimonial />
+          <News />
+          <Clients />
+        </>
+        :
+        <Preloader />
+      }
     </>
   )
 }

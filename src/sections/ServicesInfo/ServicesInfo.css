@@ -1,0 +1,503 @@
+.service-detail-section {
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+.service-detail {
+    position: relative;
+}
+
+.service-detail .image-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.service-detail .image-box img {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.service-detail .lower-content {
+    position: relative;
+}
+
+.service-detail .lower-content h2 {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #020202;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.service-detail .lower-content h3 {
+    position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 1.2em;
+    color: #020202;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.service-detail .lower-content p {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--black-shade7);
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.service-detail .two-column {
+    position: relative;
+    margin-top: 40px;
+}
+
+.service-detail .two-column .image-column {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.service-detail .two-column .image {
+    position: relative;
+}
+
+.service-detail .two-column .image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.service-detail .two-column .info-column {
+    position: relative;
+    padding-top: 10px;
+}
+
+.service-detail .two-column .list-style-two li {
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.service-detail .work-process-tabs .tab-btns .tab-btn {
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 13px 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--black-shade7);
+}
+
+.service-detail .work-process-tabs .tab-btns .tab-btn.active-btn {
+    color: var(--bg-color);
+}
+
+.service-detail .tabs-column {
+    margin-bottom: 30px;
+}
+
+.service-detail .tabs-column .inner-column {
+    padding-right: 20px;
+}
+
+.service-detail .image-column .inner-column {
+    margin-left: -20px;
+}
+
+.service-detail .process-section {
+    padding: 80px 0 0;
+}
+
+.service-detail .process-block .inner-box:before {
+    display: none;
+}
+
+.service-list-style {
+    position: relative;
+}
+
+.service-list-style li {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--black-shade2);
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #e2e2e2;
+    min-width: 170px;
+    font-family: var(--heading);
+    text-align: center;
+    cursor: default;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.service-list-style li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+    background-color: var(--bg-color);
+}
+
+.service-detail .accordion-box .block:before {
+    position: absolute;
+    left: 68px;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    background-color: var(--white-color);
+    content: "";
+    z-index: 2;
+}
+
+.service-detail .accordion-box .block.active-block:before {
+    background-color: var(--black-shade0);
+    bottom: 25px;
+}
+
+.service-detail .accordion-box .block .acc-btn {
+    padding-left: 100px;
+    line-height: 28px;
+    background-color: transparent;
+}
+
+.service-detail .accordion-box .block .icon {
+    left: 30px;
+    width: auto;
+    right: auto;
+    color: var(--black-shade7);
+}
+
+.service-detail .accordion-box .block .acc-btn.active {
+    background-color: transparent;
+    color: #002121;
+}
+
+.service-detail .accordion-box .block.active-block .icon:before {
+    color: #ff7e00;
+}
+
+.service-detail .accordion-box .block .content {
+    padding-left: 100px;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.service-detail .accordion-box .block .content .text {
+    font-size: 14px;
+    line-height: 27px;
+    color: var(--black-shade7);
+}
+
+/*Services Category*/
+
+.services--list {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.services--list li {
+    position: relative;
+    list-style-type: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.services--list li .a {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--black-shade2);
+    line-height: 28px;
+    padding: 15px 25px;
+    display: block;
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid var(--white-color);
+    overflow: hidden;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.services--list li .a:before {
+    position: absolute;
+    content: "\f0d9";
+    left: 40px;
+    top: 14px;
+    font-size: 16px;
+    color: var(--black-shade2);
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'FontAwesome';
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.services--list li:hover .a:before,
+.services--list li.active .a:before {
+    color: var(--primary-color);
+}
+
+.services--list li.active .a,
+.services--list li:hover .a {
+    border: 1px solid transparent;
+    border-right: 4px solid var(--primary-color);
+    color: var(--bg-color);
+}
+
+.services--list li .a:after {
+    position: absolute;
+    right: -20px;
+    top: -1px;
+    bottom: -1px;
+    width: 0;
+    content: "";
+    background-color: var(--black-shade2);
+    z-index: -1;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.services--list li.active .a:after,
+.services--list li:hover .a:after {
+    width: 101%;
+    transform: skew(-25deg);
+}
+
+/*Brochure links*/
+.services-sidebar .links-box {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.services-sidebar .links-box h4 {
+    display: block;
+    font-size: 22px;
+    line-height: 1.2em;
+    color: var(--black-shade2);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.services-sidebar .brochure-link {
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    transform: skew(-15deg);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.services-sidebar .brochure-link .a {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 27px;
+    color: var(--black-shade6);
+    font-weight: 400;
+    padding: 15px 30px;
+    padding-left: 35px;
+    transform: skew(15deg);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.services-sidebar .brochure-link .a i {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black-shade2);
+    font-weight: 400;
+    margin-right: 25px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.services-sidebar .brochure-link:hover .a,
+.services-sidebar .brochure-link:hover .a i {
+    color: var(--bg-color);
+}
+
+.services-sidebar .brochure-link:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+/*brochure Box*/
+
+.brochure-box {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 45px 40px 45px;
+    margin-bottom: 50px;
+}
+
+.brochure-box:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black-shade2);
+    opacity: 0.90;
+    content: "";
+}
+
+.brochure-box>span {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.brochure-box h4 {
+    position: relative;
+    font-size: 24px;
+    line-height: 1.2em;
+    color: var(--bg-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.brochure-box p {
+    position: relative;
+    font-size: 14px;
+    line-height: 28px;
+    color: #cccccc;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.brochure-box .theme-btn {
+    position: relative;
+    padding: 10px 35px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--bg-color);
+    border-radius: 30px;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+}
+
+.brochure-box .theme-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.accordion-box {
+    position: relative;
+    margin: 0;
+}
+
+.accordion-box .block {
+    position: relative;
+    margin-bottom: 20px;
+    list-style-type: none;
+    border: 1px solid #dddddd;
+}
+
+.accordion-box .block .acc-btn {
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--black-shade2);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 15px 30px;
+    padding-right: 55px;
+    background-color: #f5f5f5;
+    font-family: "Raleway", sans-serif;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.accordion-box .block .acc-btn.active {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.accordion-box .block .icon {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    color: var(--primary-color);
+    text-align: center;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.accordion-box .block .acc-btn.active .icon {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: var(--black-shade2);
+}
+
+.accordion-box .block .acc-content {
+    position: relative;
+    display: none;
+}
+
+.accordion-box .block .content {
+    position: relative;
+    padding: 15px 30px 30px;
+}
+
+.accordion-box .block .acc-content.current {
+    display: block;
+}
+
+.accordion-box .block .content .text {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--black-shade7);
+    margin-bottom: 0;
+}

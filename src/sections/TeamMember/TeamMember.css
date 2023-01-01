@@ -1,0 +1,143 @@
+.team-detail {
+    position: relative;
+    padding: 120px 0 70px;
+}
+
+.team-detail .image-column {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.team-detail .image-column .image-box {
+    position: relative;
+    padding-top: 15px;
+}
+
+.team-detail .image-column .image {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.team-detail .image-column .image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.team-detail .content-column {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.team-detail .content-column .inner-column {
+    position: relative;
+}
+
+.team-detail .content-column .info-box {
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.team-detail .content-column .name {
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: var(--black-shade2);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.team-detail .content-column .designation {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.team-detail .content-column .text-box {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.team-detail .content-column p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--black-shade7);
+    margin-bottom: 28px;
+    font-family: "Roboto", sans-serif;
+}
+
+.team-detail .contact-list {
+    position: relative;
+    margin: 0;
+}
+
+.team-detail .contact-list li {
+    position: relative;
+    list-style-type: none;
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--black-shade2);
+    padding-left: 45px;
+    margin-bottom: 10px;
+}
+
+.team-detail .contact-list li .a {
+    color: var(--black-shade2);
+}
+
+.team-detail .contact-list li .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--primary-color);
+}
+
+.team-detail .social-links {
+    position: relative;
+    margin-top: 36px;
+    margin-bottom: 0;
+    float: right;
+}
+
+.team-detail .social-links li {
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--black-shade2);
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.team-detail .social-links li .a {
+    color: var(--black-shade2);
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.team-detail .social-links li.title {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-right: 15px;
+    margin-left: 0;
+    font-family: var(--heading-family);
+}
+
+.team-detail .social-links li .a:hover {
+    color: var(--primary-color);
+}

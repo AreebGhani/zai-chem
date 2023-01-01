@@ -1,9 +1,11 @@
 export { default as Hero } from "./Hero/Hero";
 export { default as AboutUs } from "./AboutUs/AboutUs";
 export { default as OurServices } from "./OurServices/OurServices";
+export { default as ServicesInfo } from "./ServicesInfo/ServicesInfo";
 export { default as FunFact } from "./FunFact/FunFact";
 export { default as Projects } from "./Projects/Projects";
-export { default as Team } from "./Team/Team";
+export { default as OurTeam } from "./OurTeam/OurTeam";
+export { default as TeamMember } from "./TeamMember/TeamMember";
 export { default as Testimonial } from "./Testimonial/Testimonial";
 export { default as News } from "./News/News";
 export { default as Clients } from "./Clients/Clients";
@@ -17,3 +19,4 @@ export { default as NewsLetter } from "./NewsLetter/NewsLetter";
 export { default as ContactForm } from "./ContactForm/ContactForm";
 export { default as MapLocation } from "./MapLocation/MapLocation";
 export { default as ContactInfo } from "./ContactInfo/ContactInfo";
+export { default as ProductInfo } from "./ProductInfo/ProductInfo";

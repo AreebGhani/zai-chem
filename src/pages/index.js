@@ -1,6 +1,12 @@
 export { default as Home } from "./Home/Home";
 export { default as About } from "./About/About";
+export { default as Team } from "./Team/Team";
+export { default as TeamDetails } from "./TeamDetails/TeamDetails";
 export { default as Contact } from "./Contact/Contact";
 export { default as Services } from "./Services/Services";
+export { default as ServiceDetails } from "./ServiceDetails/ServiceDetails";
 export { default as Products } from "./Products/Products";
+export { default as ProductDetails } from "./ProductDetails/ProductDetails";
+export { default as LiteratureReview } from "./LiteratureReview/LiteratureReview";
 export { default as Blog } from "./Blog/Blog";
+export { default as BlogDetails } from "./BlogDetails/BlogDetails";

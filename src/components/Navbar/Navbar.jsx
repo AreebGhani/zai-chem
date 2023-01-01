@@ -17,11 +17,11 @@ export const NavLinks = [
       },
       {
         name: 'Team',
-        to: '/about',
+        to: '/team',
       },
       {
         name: 'Team Detail',
-        to: '/about',
+        to: '/team-details/:id',
       },
     ]
   },
@@ -35,7 +35,7 @@ export const NavLinks = [
       },
       {
         name: 'Service Detail',
-        to: '/services',
+        to: '/service-details/:id',
       },
     ]
   },
@@ -49,11 +49,11 @@ export const NavLinks = [
       },
       {
         name: 'Products Detail',
-        to: '/products',
+        to: '/product-details/:id',
       },
       {
         name: 'Literature Review',
-        to: '/products',
+        to: '/literature-review',
       },
     ]
   },
@@ -67,7 +67,7 @@ export const NavLinks = [
       },
       {
         name: 'Blog Detail',
-        to: '/blog',
+        to: '/blog-details/:id',
       },
     ]
   },
@@ -181,7 +181,7 @@ export default function Navbar() {
         </div>
 
         <div className="btn-box">
-          <NavLink to="/" className="a theme-btn btn-style-one"><span className="btn-title">Get A Quote </span></NavLink>
+          <NavLink to="/contact" className="a theme-btn btn-style-one"><span className="btn-title">Get A Quote </span></NavLink>
         </div>
       </div>
     </div>

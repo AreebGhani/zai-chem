@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet';
 import { Preloader } from '../../components';
-import { Clients, News, PageTitle } from '../../sections';
+import { Clients, PageTitle, ProductInfo } from '../../sections';
 
-export default function Blog() {
+export default function LiteratureReview() {
 
     const [load, setLoad] = useState(true)
 
@@ -18,11 +18,11 @@ export default function Blog() {
                 !load ?
                     <>
                         <Helmet>
-                            <title>Blogs &ndash; ZAI Chem</title>
+                            <title>Literature Review &ndash; ZAI Chem</title>
                             <link rel="stylesheet" href="/css/responsive.css" />
                         </Helmet>
-                        <PageTitle page="Blog" />
-                        <News theme="two" />
+                        <PageTitle page="Literature Review" />
+                        <ProductInfo theme="two" />
                         <Clients />
                     </>
                     :

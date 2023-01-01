@@ -20,7 +20,10 @@ export default function BackToTop() {
     }, [])
 
     const ScrollToTop = () => {
-        window.scrollTo(0, 0)
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     }
 
     return <div className={show ? "scroll-to-top scroll-to-target show" : "scroll-to-top scroll-to-target hide"} onClick={ScrollToTop}><span className="fa fa-angle-up"></span></div>
