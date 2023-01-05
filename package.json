@@ -14,7 +14,6 @@
     "jquery": "^3.6.2",
     "popper.js": "^1.16.1",
     "react": "^18.2.0",
-    "react-animated-text-content": "^1.0.1",
     "react-countup": "^6.4.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
