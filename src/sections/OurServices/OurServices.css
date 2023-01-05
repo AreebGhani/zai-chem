@@ -32,14 +32,11 @@
 .services-carousel {
   position: relative;
   z-index: 9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
 }
 
 .service-block {
   position: relative;
+  margin: 0 10px;
 }
 
 .service-block .inner-box {

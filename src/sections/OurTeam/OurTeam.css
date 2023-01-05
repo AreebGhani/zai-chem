@@ -21,14 +21,11 @@
 .team-section .team-carousel {
   position: relative;
   padding-bottom: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
 }
 
 .team-block {
   position: relative;
+  margin: 0 10px;
 }
 
 .team-block .inner-box {

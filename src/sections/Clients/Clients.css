@@ -12,14 +12,12 @@
   position: relative;
   list-style-type: none;
   margin: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .clients-section .slide-item {
   position: relative;
   list-style: none;
+  margin: 0 10px;
 }
 
 .clients-section .image-box {

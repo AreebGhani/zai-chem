@@ -1,9 +1,16 @@
 import React from 'react';
 import "./Testimonial.css";
+import { Carousel } from 'react-responsive-carousel';
 import img1 from "../../assets/images/resource/testimonial-thumb.jpg";
 
 export default function Testimonial({ theme }) {
   const reviews = [
+    {
+      name: "Monika Morala",
+      designation: "CEO",
+      img: img1,
+      text: "Manufactoriuring industry became a key sector of production and labour in European and North American countries during the Industrial Revolution, upsetting previous mercantile and feudal economies.",
+    },
     {
       name: "Monika Morala",
       designation: "CEO",
@@ -23,23 +30,27 @@ export default function Testimonial({ theme }) {
               <div className="devider"><span className="fa fa-cogs"></span></div>
             </div>
             <div className="testimonial-carousel owl-carousel owl-theme">
-              {
-                reviews.map((review, i) => {
-                  return (
-                    <div key={i} className="testimonial-block">
-                      <div className="inner-box">
-                        <span className="icon fa fa-quote-left"></span>
-                        <div className="text">{review.text}</div>
-                        <div className="info-box">
-                          <div className="thumb"><img src={review.img} alt="" /></div>
-                          <h6 className="name">{review.name}</h6>
-                          <div className="designation"><span>-</span> {review.designation}</div>
+              <Carousel autoPlay={true} emulateTouch={true} infiniteLoop={true} showArrows={false}
+                showStatus={false} showIndicators={false} showThumbs={true}
+              >
+                {
+                  reviews.map((review, i) => {
+                    return (
+                      <div key={i} className="testimonial-block">
+                        <div className="inner-box">
+                          <span className="icon fa fa-quote-left"></span>
+                          <div className="text">{review.text}</div>
+                          <div className="info-box">
+                            <div className="thumb"><img src={review.img} alt="" /></div>
+                            <h6 className="name">{review.name}</h6>
+                            <div className="designation"><span>-</span> {review.designation}</div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  )
-                })
-              }
+                    )
+                  })
+                }
+              </Carousel>
             </div>
           </div>
         </div>
@@ -88,23 +99,27 @@ export default function Testimonial({ theme }) {
                     <div className="devider"><span className="fa fa-cogs"></span></div>
                   </div>
                   <div className="testimonial-carousel owl-carousel owl-theme">
-                    {
-                      reviews.map((review, i) => {
-                        return (
-                          <div key={i} className="testimonial-block">
-                            <div className="inner-box">
-                              <span className="icon fa fa-quote-left"></span>
-                              <div className="text">{review.text}</div>
-                              <div className="info-box">
-                                <div className="thumb"><img src={review.img} alt="" /></div>
-                                <h6 className="name">{review.name}</h6>
-                                <div className="designation"><span>-</span> {review.designation}</div>
+                    <Carousel autoPlay={true} emulateTouch={true} infiniteLoop={true} showArrows={false}
+                      showStatus={false} showIndicators={false} showThumbs={true}
+                    >
+                      {
+                        reviews.map((review, i) => {
+                          return (
+                            <div key={i} className="testimonial-block">
+                              <div className="inner-box">
+                                <span className="icon fa fa-quote-left"></span>
+                                <div className="text">{review.text}</div>
+                                <div className="info-box">
+                                  <div className="thumb"><img src={review.img} alt="" /></div>
+                                  <h6 className="name">{review.name}</h6>
+                                  <div className="designation"><span>-</span> {review.designation}</div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        )
-                      })
-                    }
+                          )
+                        })
+                      }
+                    </Carousel>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProductInfo.css';
+import { Carousel } from 'react-responsive-carousel';
 import img1 from '../../assets/images/product_detail/3.jpg';
 import img2 from '../../assets/images/product_detail/4.jpg';
 import img3 from '../../assets/images/resource/video-img.jpg';
@@ -17,15 +18,17 @@ export default function ProductInfo({ theme }) {
                     </div>
                     {/* <!-- Project Carousel  --> */}
                     <div className="single-item-carousel owl-carousel owl-theme">
+                        <Carousel autoPlay={true} emulateTouch={true} infiniteLoop={true} showArrows={true}
+                            showStatus={false} showIndicators={true} showThumbs={true}
+                        >
+                            <div className="image-box" >
+                                <figure className="image"><a href="images/product_detail/3.jpg" className="lightbox-image a"><img src={img1} alt="" height="inherit" /></a></figure>
+                            </div>
 
-                        <div className="image-box" >
-                            <figure className="image"><a href="images/product_detail/3.jpg" className="lightbox-image a"><img src={img1} alt="" height="inherit" /></a></figure>
-                        </div>
-
-                        <div className="image-box" >
-                            <figure className="image"><a href="images/product_detail/4.jpg" className="lightbox-image a"><img src={img2} alt="" height="inherit" /></a></figure>
-                        </div>
-
+                            <div className="image-box" >
+                                <figure className="image"><a href="images/product_detail/4.jpg" className="lightbox-image a"><img src={img2} alt="" height="inherit" /></a></figure>
+                            </div>
+                        </Carousel>
                     </div>
                     {
                         theme === "two" &&

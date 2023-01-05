@@ -1,6 +1,7 @@
 import React from 'react';
 import "./OurTeam.css";
 import { NavLink } from 'react-router-dom';
+import Carousel from "react-multi-carousel";
 import img1 from "../../assets/images/resource/team-1.jpg";
 import img2 from "../../assets/images/resource/team-2.jpg";
 import img3 from "../../assets/images/resource/team-3.jpg";
@@ -101,6 +102,24 @@ export default function OurTeam() {
             ],
         },
     ]
+    const responsive = {
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
+            items: 6
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 4
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
     return (
         <section className="team-section">
             <div className="auto-container">
@@ -111,26 +130,35 @@ export default function OurTeam() {
                 </div>
 
                 <div className="team-carousel owl-carousel owl-theme">
-                    {
-                        members.map((member, i) => {
-                            return (
-                                <div key={i} className="team-block">
-                                    <div className="inner-box">
-                                        <div className="image-box">
-                                            <figure className="image"><NavLink className="a" to="/team"><img src={member.img} alt="" /></NavLink></figure>
-                                            <ul className="social-links">
-                                                {member.links.map((link, i) => <li key={i}><a href={link.url}><span className={link.icon}></span></a></li>)}
-                                            </ul>
-                                        </div>
-                                        <div className="caption-box">
-                                            <h5 className="name"><NavLink className="a" to="/team">{member.name}</NavLink></h5>
-                                            <span className="description">{member.designation}</span>
+                    <Carousel
+                        swipeable={true}
+                        draggable={true}
+                        responsive={responsive}
+                        infinite={true}
+                        autoPlay={true}
+                        removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
+                    >
+                        {
+                            members.map((member, i) => {
+                                return (
+                                    <div key={i} className="team-block">
+                                        <div className="inner-box">
+                                            <div className="image-box">
+                                                <figure className="image"><NavLink className="a" to="/team"><img src={member.img} alt="" /></NavLink></figure>
+                                                <ul className="social-links">
+                                                    {member.links.map((link, i) => <li key={i}><a href={link.url}><span className={link.icon}></span></a></li>)}
+                                                </ul>
+                                            </div>
+                                            <div className="caption-box">
+                                                <h5 className="name"><NavLink className="a" to="/team">{member.name}</NavLink></h5>
+                                                <span className="description">{member.designation}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            )
-                        })
-                    }
+                                )
+                            })
+                        }
+                    </Carousel>
                 </div>
             </div>
         </section>

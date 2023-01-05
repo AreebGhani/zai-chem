@@ -34,6 +34,7 @@
   z-index: 9;
 }
 
+.main-slider .h4,
 .main-slider h4 {
   font-size: 30px;
   line-height: 1em;
@@ -41,6 +42,7 @@
   font-weight: 700;
 }
 
+.main-slider .h2,
 .main-slider h2 {
   font-size: 48px;
   line-height: 1.2em;
@@ -48,8 +50,18 @@
   font-weight: 700;
 }
 
-.main-slider h2 span {
+.main-slider .span {
+  font-size: 48px;
+  line-height: 1.2em;
+  font-weight: 700;
   color: var(--primary-color);
+}
+
+.main-slider .caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .main-slider .text {

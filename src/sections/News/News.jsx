@@ -1,6 +1,7 @@
 import React from 'react';
 import "./News.css";
 import { NavLink } from 'react-router-dom';
+import { Carousel } from 'react-responsive-carousel';
 import img1 from "../../assets/images/resource/news-1.jpg";
 import img2 from "../../assets/images/resource/news-2.jpg";
 import img3 from "../../assets/images/resource/blog-1.jpg";
@@ -44,9 +45,13 @@ export default function News({ theme }) {
                                                 <div className="inner-box">
                                                     <div className="image-box wow fadeIn">
                                                         <div className="single-item-carousel owl-carousel owl-theme">
-                                                            <figure className="image"><img src={img3} alt="" /></figure>
-                                                            <figure className="image"><img src={img4} alt="" /></figure>
-                                                            <figure className="image"><img src={img5} alt="" /></figure>
+                                                            <Carousel autoPlay={true} emulateTouch={true} infiniteLoop={true} showArrows={true}
+                                                                showStatus={false} showIndicators={true} showThumbs={true}
+                                                            >
+                                                                <figure className="image"><img src={img3} alt="" /></figure>
+                                                                <figure className="image"><img src={img4} alt="" /></figure>
+                                                                <figure className="image"><img src={img5} alt="" /></figure>
+                                                            </Carousel>
                                                         </div>
                                                     </div>
                                                     <div className="lower-content">

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Footer.css";
+import { NavLink } from 'react-router-dom';
 import img1 from "../../assets/images/resource/post-thumb-1.jpg";
 import img2 from "../../assets/images/resource/post-thumb-2.jpg";
 
@@ -17,7 +18,7 @@ export default function Footer({ theme }) {
                                 <div className="footer-column col-lg-6 col-md-6 col-sm-12">
                                     <div className="footer-widget about-widget">
                                         <div className="logo">
-                                            <a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+                                            <NavLink className="a" to="/"><img src="images/footer-logo.png" alt="" /></NavLink>
                                         </div>
                                         <div className="text">
                                             <p><strong>Industris</strong> has very good strength in innovative technology and tools with over 35 years of experience.</p>
@@ -34,14 +35,14 @@ export default function Footer({ theme }) {
                                         {/* <!--Footer Column--> */}
                                         <div className="widget-content">
                                             <div className="post">
-                                                <div className="thumb"><a href="blog-detail.html"><img src={img1} alt="" /></a></div>
-                                                <h4><a href="blog-detail.html">We are best for any industrial solution.</a></h4>
+                                                <div className="thumb"><NavLink className="a" to="/blog-details/:id"><img src={img1} alt="" /></NavLink></div>
+                                                <h4><NavLink className="a" to="/blog-details/:id">We are best for any industrial solution.</NavLink></h4>
                                                 <span className="date">August 5, 2018</span>
                                             </div>
 
                                             <div className="post">
-                                                <div className="thumb"><a href="blog-detail.html"><img src={img2} alt="" /></a></div>
-                                                <h4><a href="blog-detail.html">We won best industry award of the year</a></h4>
+                                                <div className="thumb"><NavLink className="a" to="/blog-details/:id"><img src={img2} alt="" /></NavLink></div>
+                                                <h4><NavLink className="a" to="/blog-details/:id">We won best industry award of the year</NavLink></h4>
                                                 <span className="date">August 5, 2018</span>
                                             </div>
                                         </div>
@@ -58,12 +59,12 @@ export default function Footer({ theme }) {
                                         <h2 className="widget-title">Our Services</h2>
                                         <div className="widget-content">
                                             <ul className="serivce-list clearfix">
-                                                <li><a href="#abc">Auto Motive</a></li>
-                                                <li><a href="#abc">Agricultural</a></li>
-                                                <li><a href="#abc">Mechanical</a></li>
-                                                <li><a href="#abc">Manufactoriuring</a></li>
-                                                <li><a href="#abc">Chemical Research</a></li>
-                                                <li><a href="#abc">Oil & Gas Engineering</a></li>
+                                                <li><a className="a" href="#abc">Auto Motive</a></li>
+                                                <li><a className="a" href="#abc">Agricultural</a></li>
+                                                <li><a className="a" href="#abc">Mechanical</a></li>
+                                                <li><a className="a" href="#abc">Manufactoriuring</a></li>
+                                                <li><a className="a" href="#abc">Chemical Research</a></li>
+                                                <li><a className="a" href="#abc">Oil & Gas Engineering</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -77,7 +78,7 @@ export default function Footer({ theme }) {
                                             <h4>SUBSCRIBE TO OUR NEWSLETTER!</h4>
                                             {/* <!--Subscribe Form--> */}
                                             <div className="newslatter-form">
-                                                <form method="post" action="http://shmai.com/preview/manufactori-html/contact.html">
+                                                <form method="post" action="">
                                                     <div className="form-group">
                                                         <input type="email" name="email" value="" placeholder="Your email" required />
                                                         <button type="submit" className="theme-btn">Submit now</button>
@@ -87,11 +88,11 @@ export default function Footer({ theme }) {
 
                                             <ul className="social-icon-two">
                                                 <li className="title">Follow Us:</li>
-                                                <li><a href="#facebook"><i className="fa fa-facebook-f"></i></a></li>
-                                                <li><a href="#google"><i className="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#twitter"><i className="fa fa-twitter"></i></a></li>
-                                                <li><a href="#skype"><i className="fa fa-skype"></i></a></li>
-                                                <li><a href="#linkedin"><i className="fa fa-linkedin"></i></a></li>
+                                                <li><a className="a" href="#facebook"><i className="fa fa-facebook-f"></i></a></li>
+                                                <li><a className="a" href="#google"><i className="fa fa-google-plus"></i></a></li>
+                                                <li><a className="a" href="#twitter"><i className="fa fa-twitter"></i></a></li>
+                                                <li><a className="a" href="#skype"><i className="fa fa-skype"></i></a></li>
+                                                <li><a className="a" href="#linkedin"><i className="fa fa-linkedin"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -108,14 +109,14 @@ export default function Footer({ theme }) {
                     <div className="inner-container clearfix">
                         <div className="footer-nav">
                             <ul className="clearfix">
-                                <li><a href="index.html">Privacy Policy</a></li>
-                                <li><a href="about.html">Contact</a></li>
-                                <li><a href="services.html">Supplier</a></li>
+                                <li><NavLink className="a" to="index.html">Privacy Policy</NavLink></li>
+                                <li><NavLink className="a" to="/contact">Contact</NavLink></li>
+                                <li><NavLink className="a" to="/services">Supplier</NavLink></li>
                             </ul>
                         </div>
 
                         <div className="copyright-text">
-                            <p>2019 © All Rights Reserved by <a href="index.html">Shmai</a></p>
+                            <p>2019 © All Rights Reserved by <NavLink className="a" to="/">ZAI Chem</NavLink></p>
                         </div>
                     </div>
                 </div>
