@@ -59,34 +59,34 @@ export default function ServicesInfo() {
 
 
                                     {/* <!--Block--> */}
-                                    <li className="accordion block active-block">
-                                        <div className="acc-btn active">Micro electro-mechanical systems <div className="icon fa fa-long-arrow-right"></div></div>
-                                        <div className="acc-content current">
+                                    <details className="accordion block">
+                                        <summary className="acc-btn">Micro electro-mechanical systems</summary>
+                                        <p className="acc-content current">
                                             <div className="content">
                                                 <div className="text">Pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master builder of human born and I will give you a complete account of the system.</div>
                                             </div>
-                                        </div>
-                                    </li>
+                                        </p>
+                                    </details>
 
                                     {/* <!--Block--> */}
-                                    <li className="accordion block">
-                                        <div className="acc-btn">Friction stir welding <div className="icon fa fa-long-arrow-right"></div></div>
-                                        <div className="acc-content">
+                                    <details className="accordion block">
+                                        <summary className="acc-btn">Friction stir welding</summary>
+                                        <p className="acc-content current">
                                             <div className="content">
                                                 <div className="text">Pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master builder of human born and I will give you a complete account of the system.</div>
                                             </div>
-                                        </div>
-                                    </li>
+                                        </p>
+                                    </details>
 
                                     {/* <!--Block--> */}
-                                    <li className="accordion block">
-                                        <div className="acc-btn">Composites <div className="icon fa fa-long-arrow-right"></div></div>
-                                        <div className="acc-content">
+                                    <details className="accordion block">
+                                        <summary className="acc-btn">Composites</summary>
+                                        <p className="acc-content current">
                                             <div className="content">
                                                 <div className="text">Pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master builder of human born and I will give you a complete account of the system.</div>
                                             </div>
-                                        </div>
-                                    </li>
+                                        </p>
+                                    </details>
                                 </ul>
                                 <Process />
                             </div>

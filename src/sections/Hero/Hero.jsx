@@ -20,7 +20,7 @@ export default function Hero() {
     return (
         <>
             <section className="main-slider">
-                <Carousel autoPlay={true} emulateTouch={true} infiniteLoop={true} showArrows={false}
+                <Carousel autoPlay={true} emulateTouch={false} infiniteLoop={true} showArrows={false}
                     showStatus={false} showIndicators={true} showThumbs={true} interval={5000}
                 >
                     {
